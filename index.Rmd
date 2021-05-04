@@ -16,6 +16,17 @@ output:
     seal: false
 ---
 
+```{r setup, include=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "alphabetic",
+           style = "markdown",
+           hyperlink = FALSE,
+           dashed = FALSE)
+myBib <- ReadBib("./references.bib", check = FALSE)
+```
+
 class: title-slide   
 
 <br><br><br><br><br><br><br>
@@ -24,7 +35,7 @@ class: title-slide
 .font140[Scaling productivity]
 
 <br>
-.font110[Bradley Boehmke<br>June 8, 2021<br>[bit.ly/TBD]()]
+.font110[Bradley Boehmke<br>June 8, 2021<br>[bradleyboehmke.github.io/analytics-summit-2021/](https://bradleyboehmke.github.io/analytics-summit-2021/)]
 
 
 ---
@@ -47,9 +58,9 @@ class: no-header-slide
 
 * Who am I
 
-* General research interests
+* TBD
 
-* Interpretable machine learning
+* TBD
 
 ]
 
@@ -64,9 +75,9 @@ class: no-header-slide
 
 * Data scientist (1) | Software engineer (2)
 
-* Interested in applied ML research
+* TBD
 
-* Build open source tools for other data scientists
+* TBD
 
 ]
 
@@ -138,34 +149,6 @@ leaflet() %>%
   setView(lat = 39.692720, lng = -84.015850, zoom=5) %>%
   addMarkers(lng=-84.015850, lat=39.692720)
 ```
-
-]
-
----
-
-# About me  <img src="figures/about_me_bitmoji.png" height="60" width="60", align="right">
-
-<br>
-
-.pull-left[
-
-```{r, echo=FALSE}
-knitr::include_graphics("figures/name-tag.png")
-```
-
-]
-
-.pull-right[
-
-<img src="figures/ndsu.png" align="middle" alt="NDSU" width="150" /> &ensp;&ensp; .font120[B.S. Kinesiology]
-
-<br>
-
-<img src="figures/afit.png" align="middle" alt="AFIT" width="150" /> &ensp;&ensp; .font120[M.S. Cost Analytics]
-
-<br>
-
-<img src="figures/afit.png" align="middle" alt="AFIT" width="150" /> &ensp;&ensp; .font120[PhD Logistics]
 
 ]
 
@@ -314,11 +297,100 @@ knitr::include_graphics("figures/name-tag.png")
 class: section-slide 
 
 <br><br><br><br><br><br><br><br><br><br><br>
-# .font150[TBD]
+# .font150[What is inner source?]
+
+---
+# Topics
+
+- What is open source
+- Show example of R/Python open source pkgs
+- Discuss why open source is so successful
+- Contrast this with the idea of inner source
+
+---
+# Well, first, what is open source?
+
+.pull-left.center[
+
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("figures/r-open-source.png")
+```
+
+]
+
+.pull-right.center[
+
+<br><br>
+
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("figures/py-open-source.jpg")
+```
+
+]
+
+---
+# Well, first, what is open source?
+
+<br>
+Yes, open source means free access to use code.
+
+<br><br>
+
+--
+
+But more importantly, the open source model is...
+
+> _"a decentralized software development model that encourages open collaboration, meaning any system of innovation or production that relies on goal-oriented yet loosely coordinated participants who interact to create a product (or service) of economic value."_  - `r Citet(myBib, author = "Levine")`
+
+---
+
 
 
 ---
 class: section-slide 
 
 <br><br><br><br><br><br><br><br><br><br><br>
+# .font150[Establishing inner source at 84.51°]
+
+---
+# Topics
+
+- Talk about size of 84.51 and why inner source is relevant
+- Driving force of inner source need --> migration and lack of consistency
+- Talk about APTS team formation
+- Initial packages
+- R ~vs~ and Python
+
+---
+class: section-slide 
+
+<br><br><br><br><br><br><br><br><br><br><br>
+# .font150[Nurturing inner source at 84.51°]
+
+---
+# Topics
+
+- A growing ecosystem
+- Standardization
+- Certification
+- cookiecutter
+
+---
+class: section-slide 
+
+<br><br><br><br><br><br><br><br><br><br><br>
+# .font150[Main takeaways]
+
+---
+class: section-slide 
+
+<br><br><br><br><br><br><br><br><br><br><br>
 # .font150[Thank You!]
+
+---
+
+# References
+
+```{r refs, echo=FALSE, results="asis"}
+PrintBibliography(myBib)
+```
