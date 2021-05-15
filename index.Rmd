@@ -35,62 +35,9 @@ class: title-slide
 .font140[Scaling productivity]
 
 <br>
-.font110[Bradley Boehmke<br>June 8, 2021<br>[bradleyboehmke.github.io/analytics-summit-2021/](https://bradleyboehmke.github.io/analytics-summit-2021/)]
+.font110[Bradley Boehmke<br>June 8, 2021<br>[bit.ly/inner_source](http://bit.ly/inner_source)]
 
 
----
-class: section-slide 
-
-<br><br><br><br><br><br><br><br><br><br><br>
-# .font150[Setting expectations]
-
----
-class: no-header-slide
-
-<br><br>
-
-.pull-left.font110[
-
-]
-
-<br>
-.font140.pull-right[
-
-* Who am I
-
-* TBD
-
-* TBD
-
-]
-
----
-class: no-header-slide
-
-<br><br>
-
-.pull-left.font110[
-
-### TL;DR
-
-* Data scientist (1) | Software engineer (2)
-
-* TBD
-
-* TBD
-
-]
-
-<br>
-.opacity10.font140.pull-right[
-
-* Who am I
-
-* General research interests
-
-* Interpretable machine learning
-
-]
 
 ---
 class: section-slide 
@@ -292,23 +239,115 @@ knitr::include_graphics("figures/name-tag.png")
 
 ]
 
-
 ---
 class: section-slide 
 
 <br><br><br><br><br><br><br><br><br><br><br>
-# .font150[What is inner source?]
+# .font150[Who is 84.51°]
 
 ---
-# Topics
 
-- What is open source
-- Show example of R/Python open source pkgs
-- Discuss why open source is so successful
-- Contrast this with the idea of inner source
+# Kroger's little brother
+
+.pull-left[
+<br><br><br><br><br>
+```{r, echo=FALSE, fig.align='center', out.width="80%"}
+knitr::include_graphics("figures/8451_logo.jpeg")
+```
+
+
+]
+
+.pull-right[
+<br><br>
+```{r, echo=FALSE, fig.align='center', out.width="80%"}
+knitr::include_graphics("figures/kroger-logo.png")
+```
+]
+
+---
+background-image: url(figures/what-does-8451-do.png)
+background-position: center
+background-size: contain
+class: no-header-slide
+
+---
+
+# Company Profile
+
+```{r, echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("figures/profile-makeup.png")
+```
+
+---
+
+# Growing pains
+
+.pull-left[
+
+### Change
+
+- reorganizations
+
+- platform migrations
+
+- language/tool migrations
+
+- WoW (data science engineering)
+
+]
+
+--
+
+.pull-right[
+
+### Managing change
+
+- collaboration
+
+- growing expertise
+
+- modularity
+
+- innovation
+
+]
+
+---
+
+class: section-slide, middle
+
+<br><br><br><br><br><br>
+# Can we rethink how we build internal products?
+
+---
+class: no-header-slide, center, middle
+
+.font250[Let's take a look at the <br>open-source world]
 
 ---
 # Well, first, what is open source?
+
+<br>
+Yes, open source means free access to use code.
+
+<br><br>
+
+--
+
+But more importantly, the open source model is...
+
+> _"a decentralized software development model that encourages open collaboration, meaning any system of innovation or production that relies on goal-oriented yet loosely coordinated participants who interact to create a product (or service) of economic value."_  - `r Citet(myBib, author = "Levine")`
+
+---
+class: no-header-slide, center, middle
+
+```{r, echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics("figures/open-source-languages.png")
+```
+
+---
+class: no-header-slide, center, middle
 
 .pull-left.center[
 
@@ -329,28 +368,160 @@ knitr::include_graphics("figures/py-open-source.jpg")
 ]
 
 ---
-# Well, first, what is open source?
+class: no-header-slide, center, middle
 
-<br>
-Yes, open source means free access to use code.
-
-<br><br>
-
---
-
-But more importantly, the open source model is...
-
-> _"a decentralized software development model that encourages open collaboration, meaning any system of innovation or production that relies on goal-oriented yet loosely coordinated participants who interact to create a product (or service) of economic value."_  - `r Citet(myBib, author = "Levine")`
+.font250[What makes some OSS<br> so successful?]
 
 ---
 
+# Open Source
 
+.pull-left[
+
+- .font120.bold[.blue[Open collaboration] --> .green[Faster innovation]]
+
+
+]
+
+.pull-right[
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/oss-collaboration.png")
+```
+
+]
+
+---
+
+# Open Source
+
+.pull-left[
+
+- .opacity[Open collaboration --> Faster innovation]
+
+- .bold[.blue[Strong core team] --> .green[Clear direction]]
+
+
+]
+
+.pull-right[
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/oss-core-team.png")
+```
+
+]
+
+---
+
+# Open Source
+
+.pull-left[
+
+- .opacity[Open collaboration --> Faster innovation]
+
+- .opacity[Strong core team --> Clear direction]
+
+- .bold[.blue[Clear communication] --> .green[Broader knowledge transfer]]
+
+
+]
+
+.pull-right[
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/oss-clear-comms.png")
+```
+
+]
+
+---
+
+# Open Source
+
+.pull-left[
+
+- .opacity[Open collaboration --> Faster innovation]
+
+- .opacity[Strong core team --> Clear direction]
+
+- .opacity[Clear communication --> Broader knowledge transfer]
+
+- .bold[.blue[Modularity] --> .green[Simple & reliable architecture]]
+
+
+]
+
+.pull-right[
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/oss-modularity.png")
+```
+
+]
+
+---
+
+# Open Source
+
+.pull-left[
+
+- .opacity[Open collaboration --> Faster innovation]
+
+- .opacity[Strong core team --> Clear direction]
+
+- .opacity[Clear communication --> Broader knowledge transfer]
+
+- .opacity[Modularity --> Simple & reliable architecture]
+
+- .bold[.blue[Consistency] --> .green[Simplified governance]]
+
+]
+
+.pull-right[
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/oss-consistency.png")
+```
+
+]
 
 ---
 class: section-slide 
 
 <br><br><br><br><br><br><br><br><br><br><br>
 # .font150[Establishing inner source at 84.51°]
+
+---
+# Inner source
+
+<br><br><br><br>
+
+> _.font150[Taking the lessons learned from developing open source software and applying them to the way we develop software internally.]_
+
+---
+
+# Inner Source
+
+.pull-left[
+
+- Open collaboration
+- Strong core team
+- Clear communication
+- Modularity
+- Consistency
+
+]
+
+.pull-right[
+
+- Faster innovation
+- Clear direction
+- Broader knowledge transfer
+- Simple & reliable architecture
+- Simplified governance
+
+]
 
 ---
 # Topics
