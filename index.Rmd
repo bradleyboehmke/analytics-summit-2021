@@ -524,6 +524,61 @@ class: section-slide
 ]
 
 ---
+
+# Open Collaboration
+
+.pull-left[
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/effo-GH.png")
+```
+
+]
+
+.pull-right[
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/effo-SO.png")
+```
+
+]
+
+???
+
+- Providing the right tools is important
+   - aligning to OSS WoW
+   - new folks adapt quicker
+- Education on how to use tools is also critical
+   - Github is still foreign to many
+   - 
+
+---
+
+# Strong Core Team
+
+
+.pull-left[
+
+.bold.center[Building inner source tooling]
+
+```{r, echo=FALSE, out.width='70%', fig.align='center'}
+knitr::include_graphics("figures/effo-apts-team.png")
+```
+
+]
+
+.pull-right[
+
+.bold.center[Serving business clients]
+
+```{r, echo=FALSE, out.width='55%', fig.align='center'}
+knitr::include_graphics("figures/effo-biz-teams.png")
+```
+
+]
+
+
+---
 # Topics
 
 - Talk about size of 84.51 and why inner source is relevant
