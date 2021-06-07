@@ -155,11 +155,10 @@ knitr::include_graphics("figures/name-tag.png")
 * Data Wrangling with `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](http://uc-r.github.io/data_wrangling)
 * Machine Learning with `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/uc-r/Advanced-R)
 * Advanced `r fontawesome::fa("python")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/uc-python/advanced-python-datasci)
-* Deep Learning with Keras and TensorFlow [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/rstudio-conf-2020/dl-keras-tf)
-* Delivering Data Science Products via Packages [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/misk-data-science/misk-packages)
+* Deep Learning with Keras and TensorFlow `r fontawesome::fa("python")` `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/rstudio-conf-2020/dl-keras-tf)
+* Delivering Data Science Products via Packages `r fontawesome::fa("python")` `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/misk-data-science/misk-packages)
 * Text Mining with `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/bradleyboehmke/R-Training-Text-Mining)
-* Interpretable Machine Learning [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/bradleyboehmke/CinDay-RUG-IML-2018)
-* DevOps for Data Science (internal)
+* Interpretable Machine Learning `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/bradleyboehmke/CinDay-RUG-IML-2018)
 
 
 ]
@@ -184,35 +183,12 @@ knitr::include_graphics("figures/name-tag.png")
 knitr::include_graphics(c("https://images-na.ssl-images-amazon.com/images/I/41ttvv4UJ%2BL._SX331_BO1,204,203,200_.jpghttps://images.tandf.co.uk/common/jackets/amazon/978113849/9781138495685.jpg", "https://images.tandf.co.uk/common/jackets/amazon/978113849/9781138495685.jpg"))
 ```
 
-```{r, eval=FALSE, echo=FALSE, out.height=400}
+```{r, eval=FALSE, echo=FALSE, out.height=350}
 knitr::include_graphics("https://images.tandf.co.uk/common/jackets/amazon/978113849/9781138495685.jpg")
 ```
 
 ]
 
-
----
-# About me  <img src="figures/about_me_bitmoji.png" height="60" width="60", align="right">
-
-<br>
-
-.pull-left[
-
-```{r, echo=FALSE}
-knitr::include_graphics("figures/name-tag.png")
-```
-
-]
-
-.pull-right[
-
-<br><br>
-
-```{r, echo=FALSE}
-knitr::include_graphics("figures/r-contributions.png")
-```
-
-]
 
 ---
 
@@ -285,31 +261,42 @@ knitr::include_graphics("figures/profile-makeup.png")
 
 .pull-left[
 
-### Change
+- Stove pipe processes
 
-- reorganizations
+- Code duplication 
 
-- platform migrations
-
-- language/tool migrations
-
-- WoW (data science engineering)
+- Code inconsistencies
 
 ]
 
---
+.pull-right[
+
+```{r, echo=FALSE, fig.align='center', out.height=500}
+knitr::include_graphics("https://images.unsplash.com/photo-1616801877957-0d5ac4b50531?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80")
+```
+
+]
+
+---
+
+# Growing pains
+
+.pull-left[
+
+- Platform migrations
+
+- Nuance, non-relevant detail changes
+
+- Code re-work
+
+]
 
 .pull-right[
 
-### Managing change
+```{r, echo=FALSE, fig.align='center', out.height=500}
+knitr::include_graphics("https://images.unsplash.com/photo-1525109556882-cb01f87f4552?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
+```
 
-- collaboration
-
-- growing expertise
-
-- modularity
-
-- innovation
 
 ]
 
@@ -318,12 +305,12 @@ knitr::include_graphics("figures/profile-makeup.png")
 class: section-slide, middle
 
 <br><br><br><br><br><br>
-# Can we rethink how we build internal products?
+# Can we rethink how we build & deliver <br>internal tools?
 
 ---
 class: no-header-slide, center, middle
 
-.font250[Let's take a look at the <br>open-source world]
+.font250[Taking a page from the <br>open-source world]
 
 ---
 # Well, first, what is open source?
@@ -342,22 +329,22 @@ But more importantly, the open source model is...
 ---
 class: no-header-slide, center, middle
 
-```{r, echo=FALSE, out.width='80%', fig.align='center'}
-knitr::include_graphics("figures/open-source-languages.png")
-```
+.pull-left[
+
+`r fontawesome::fa("python", height = 250)`
+
+]
+
+.pull-right[
+
+`r fontawesome::fa("r-project", height = 250)`
+
+]
 
 ---
 class: no-header-slide, center, middle
 
 .pull-left.center[
-
-```{r, echo=FALSE, out.width='80%'}
-knitr::include_graphics("figures/r-open-source.png")
-```
-
-]
-
-.pull-right.center[
 
 <br><br>
 
@@ -367,130 +354,13 @@ knitr::include_graphics("figures/py-open-source.jpg")
 
 ]
 
----
-class: no-header-slide, center, middle
+.pull-right.center[
 
-.font250[What makes some OSS<br> so successful?]
-
----
-
-# Open Source
-
-.pull-left[
-
-- .font120.bold[.blue[Open collaboration] --> .green[Faster innovation]]
-
-
-]
-
-.pull-right[
-
-```{r, echo=FALSE, out.width='100%'}
-knitr::include_graphics("figures/oss-collaboration.png")
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("figures/r-open-source.png")
 ```
 
 ]
-
----
-
-# Open Source
-
-.pull-left[
-
-- .opacity[Open collaboration --> Faster innovation]
-
-- .bold[.blue[Strong core team] --> .green[Clear direction]]
-
-
-]
-
-.pull-right[
-
-```{r, echo=FALSE, out.width='100%'}
-knitr::include_graphics("figures/oss-core-team.png")
-```
-
-]
-
----
-
-# Open Source
-
-.pull-left[
-
-- .opacity[Open collaboration --> Faster innovation]
-
-- .opacity[Strong core team --> Clear direction]
-
-- .bold[.blue[Clear communication] --> .green[Broader knowledge transfer]]
-
-
-]
-
-.pull-right[
-
-```{r, echo=FALSE, out.width='100%'}
-knitr::include_graphics("figures/oss-clear-comms.png")
-```
-
-]
-
----
-
-# Open Source
-
-.pull-left[
-
-- .opacity[Open collaboration --> Faster innovation]
-
-- .opacity[Strong core team --> Clear direction]
-
-- .opacity[Clear communication --> Broader knowledge transfer]
-
-- .bold[.blue[Modularity] --> .green[Simple & reliable architecture]]
-
-
-]
-
-.pull-right[
-
-```{r, echo=FALSE, out.width='100%'}
-knitr::include_graphics("figures/oss-modularity.png")
-```
-
-]
-
----
-
-# Open Source
-
-.pull-left[
-
-- .opacity[Open collaboration --> Faster innovation]
-
-- .opacity[Strong core team --> Clear direction]
-
-- .opacity[Clear communication --> Broader knowledge transfer]
-
-- .opacity[Modularity --> Simple & reliable architecture]
-
-- .bold[.blue[Consistency] --> .green[Simplified governance]]
-
-]
-
-.pull-right[
-
-```{r, echo=FALSE, out.width='100%'}
-knitr::include_graphics("figures/oss-consistency.png")
-```
-
-]
-
----
-class: section-slide 
-
-<br><br><br><br><br><br><br><br><br><br><br>
-# .font150[Establishing inner source at 84.51°]
 
 ---
 # Inner source
@@ -501,37 +371,161 @@ class: section-slide
 
 ---
 
-# Inner Source
+# Not new
+
+<br><br><br>
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://innersourcecommons.org/images/logo.png")
+```
+
+.font120.center[https://innersourcecommons.org/]
+
+---
+
+# Not new
+
+```{r, echo=FALSE}
+knitr::include_graphics("https://innersourcecommons.org/images/learn/innersourceinaction.png")
+```
+
+---
+
+# Value proposition
+
+<br>
+
+* .font130.bold[.blue[Open collaboration] --> .green[Faster innovation]]
+
+---
+
+# Value proposition
+
+<br>
+
+* .opacity[Open collaboration --> Faster innovation]
+
+* .font120.bold[.blue[Code reduction] --> .green[Less tech debt]]
+
+---
+
+# Value proposition
+
+<br>
+
+* .opacity[Open collaboration --> Faster innovation]
+
+* .opacity[Code reduction --> Less tech debt]
+
+* .font120.bold[.blue[Code consistency] --> .green[Better governance]]
+
+---
+
+# Value proposition
+
+<br>
+
+* .opacity[Open collaboration --> Faster innovation]
+
+* .opacity[Code reduction --> Less tech debt]
+
+* .opacity[Code consistency --> Better governance]
+
+* .font120.bold[.blue[Simple & common interfaces] --> .green[Faster delivery]]
+
+
+---
+
+# Value proposition
+
+<br>
+
+* .opacity[Open collaboration --> Faster innovation]
+
+* .opacity[Code reduction --> Less tech debt]
+
+* .opacity[Code consistency --> Better governance]
+
+* .opacity[Simple & common interfaces --> Faster delivery]
+
+* .font120.bold[.blue[Baked in best practices] --> .green[Resource efficiency]]
+
+---
+
+# Value proposition
+
+<br>
+
+* .opacity[Open collaboration --> Faster innovation]
+
+* .opacity[Code reduction --> Less tech debt]
+
+* .opacity[Code consistency --> Better governance]
+
+* .opacity[Simple & common interfaces --> Faster delivery]
+
+* .opacity[Baked in best practices --> Resource efficiency]
+
+* .font120.bold[.blue[Modular] --> .green[Establish 'lego' building blocks]]
+
+---
+class: section-slide 
+
+<br><br><br><br><br><br><br><br><br><br><br>
+# .font150[Establishing inner source at 84.51°]
+
+---
+# Create momentum
 
 .pull-left[
 
-- Open collaboration
-- Strong core team
-- Clear communication
-- Modularity
-- Consistency
+- .font130.bold[.blue[Strong core team] --> .green[Clear direction]]
 
 ]
 
 .pull-right[
 
-- Faster innovation
-- Clear direction
-- Broader knowledge transfer
-- Simple & reliable architecture
-- Simplified governance
+```{r, echo=FALSE, out.width='70%', fig.align='center'}
+knitr::include_graphics("figures/effo-apts-team.png")
+```
 
 ]
 
 ---
-
-# Open Collaboration
+# Promote collaboration
 
 .pull-left[
+
+- .opacity[Strong core team --> Clear direction]
+
+- .font120.bold[.blue[Right tools] --> .green[Align to OSS WoW]]
+
+]
+
+.pull-right[
 
 ```{r, echo=FALSE, out.width='100%'}
 knitr::include_graphics("figures/effo-GH.png")
 ```
+
+]
+
+???
+
+- Providing the right tools is important
+   - aligning to OSS WoW
+   - new folks adapt quicker
+- Education on how to use tools is also critical
+   - Github is still foreign to many
+   
+---
+# Promote collaboration
+
+.pull-left[
+
+- .opacity[Strong core team --> Clear direction]
+
+- .font120.bold[.blue[Right tools] --> .green[Align to OSS WoW]]
 
 ]
 
@@ -550,42 +544,148 @@ knitr::include_graphics("figures/effo-SO.png")
    - new folks adapt quicker
 - Education on how to use tools is also critical
    - Github is still foreign to many
-   - 
+
+---
+# Over communicate
+
+- .opacity[Strong core team --> Clear direction]
+
+- .opacity[Right tools --> Align to OSS WoW]
+
+- .font120.bold[.blue[Clear & consistent communication] --> .green[Broader knowledge transfer]]
+
+   - Open roadmap
+   
+--
+   
+   - Pushing Q&A to Github & SO for persistance
+   
+--
+   
+   - Release notes
+
+--
+
+   - User docs
+
+--
+
+   - Newsletter
+
+--
+
+   - Office hours
+
 
 ---
 
-# Strong Core Team
-
+# Embracing DevOps
 
 .pull-left[
 
-.bold.center[Building inner source tooling]
+- .opacity[Strong core team --> Clear direction]
 
-```{r, echo=FALSE, out.width='70%', fig.align='center'}
-knitr::include_graphics("figures/effo-apts-team.png")
-```
+- .opacity[Right tools --> Align to OSS WoW]
+
+- .opacity[Communications --> Knowledge transfer]
+
+- .bold[.blue[Simple & reliable architecture] --> .green[Production worthy]]
+
 
 ]
 
 .pull-right[
 
-.bold.center[Serving business clients]
+<br><br><br>
 
-```{r, echo=FALSE, out.width='55%', fig.align='center'}
-knitr::include_graphics("figures/effo-biz-teams.png")
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/devops.png")
+```
+
+]
+
+---
+
+# Consistency is your friend
+
+.pull-left[
+
+- .opacity[Strong core team --> Clear direction]
+
+- .opacity[Right tools --> Align to OSS WoW]
+
+- .opacity[Communications --> Knowledge transfer]
+
+- .opacity[Simple & reliable architecture --> Production worthy]
+
+- .bold[.blue[Fight for consistency] --> .green[Users will thank you!]]
+
+]
+
+---
+
+# Resulting ecosystem
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/ecosystem.png")
+```
+
+???
+
+Show packages in hex style
+
+- XX total packages we are aware of
+
+- of which we manage 14
+
+---
+
+# Legos for data science
+
+.pull-left[
+
+.bold[How might one leverage these tools?]
+
+A data scientist needs to provide KPI metrics for all UPCs that fall in a particular sub commodity (i.e. Coca Cola products) sold at preferred stores (Kroger Marketplace stores) during the last fiscal quarter.
+
+]
+
+--
+
+.pull-right[
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/lego_bricks.png")
 ```
 
 ]
 
 
----
-# Topics
+???
 
-- Talk about size of 84.51 and why inner source is relevant
-- Driving force of inner source need --> migration and lack of consistency
-- Talk about APTS team formation
-- Initial packages
-- R ~vs~ and Python
+Show how DSRs can piece togeher packages to analyze a problem
+
+---
+
+# Growth in adoption
+
+<br><br><br>
+
+.pull-left.center[
+
+.font300.green[ \> 25,000] 
+
+function calls per month
+
+]
+
+.pull-right.center[
+
+.font300.green[ \> 100] 
+
+distinct users per month
+
+]
 
 ---
 class: section-slide 
@@ -594,24 +694,176 @@ class: section-slide
 # .font150[Nurturing inner source at 84.51°]
 
 ---
-# Topics
 
-- A growing ecosystem
-- Standardization
-- Certification
-- cookiecutter
+# Increased focus on .red[collaboration]
+
+.pull-left[
+
+Growth in package development is now growing more outside the core team than inside requiring the core team to focus more on...
+
+* Helping teams to scope & plan
+
+* Q&A / Paired programming
+
+* Code reviews
+
+* Collaborative partnerships
+
+]
+
+.pull-right[
+
+```{r, echo=FALSE}
+knitr::include_graphics("figures/core-team-collab.png")
+```
+
+]
+
+---
+
+# Increased focus on .red[contributors]
+
+.pull-left[
+
+Working on increasing the number of core contributors across the company
+
+- increases package maturity & evolution
+
+- decreases maintenance bottlenecks
+
+]
+
+.pull-right[
+
+```{r, echo=FALSE}
+knitr::include_graphics("figures/core-contrib-pyramid.png")
+```
+
+]
+
+---
+
+# Increased focus on .red[governance]
+
+.pull-left[
+
+Governance acts as an informer and not a gatekeeper
+
+* `r emo::ji("check")` .bold.green[Trusted Core]
+
+* `r emo::ji("check")` .bold.green[Trusted Certified]
+
+* `r emo::ji("prohibited")` .bold.red[Known Untrusted]
+
+* `r emo::ji("warning")` .bold.red[Uncertified]
+
+]
+
+.pull-right[
+
+```{r, echo=FALSE}
+knitr::include_graphics("https://pnwe.org/wp-content/uploads/2020/05/21/Certification.jpg")
+```
+
+]
+
+---
+
+# Increase focus on .red[developer capabilities]
+
+.pull-left[
+
+* Tool development upskilling
+
+* Tool development tooling
+
+]
+
+.pull-right[
+
+```{r, echo=FALSE}
+knitr::include_graphics("figures/pkg-template-tool.png")
+```
+
+]
+
+---
+
+# Challenges & opportunities
+
+<br>
+
+.font140[
+
+* Multi-language support is hard
+
+* Multi-functional support is hard
+
+* Moving from a "my team" to "our community" perspective
+
+* Moving from an "ownership" to a "stewardship" model
+
+* Metrics are hard
+
+]
 
 ---
 class: section-slide 
 
 <br><br><br><br><br><br><br><br><br><br><br>
-# .font150[Main takeaways]
+# .font150[So what?]
+
+---
+
+# Take aways
+
+.pull-left[
+
+Inner source can provide your organization many benefits:
+
+* Open collaboration --> Faster innovation
+
+* Code reduction --> Less tech debt
+
+* Code consistency --> Better governance
+
+* Simple & common interfaces --> Faster delivery
+
+* Baked in best practices --> Resource efficiency
+
+* Modular --> Establish 'lego' building blocks
+
+]
+
+--
+
+.pull-right[
+
+But its not easy and consider it a journey not a race:
+
+* Requires buy-in from leadership
+
+* You need to create momentum
+
+* Requires a mix of software engineering and data science skills
+
+* Requires the right infrastructure
+
+* Measuring success is not easy
+
+]
+
+---
+background-image: url(figures/get-started.jpeg)
+background-position: center
+background-size: contain
+class: no-header-slide
 
 ---
 class: section-slide 
 
 <br><br><br><br><br><br><br><br><br><br><br>
-# .font150[Thank You!]
+# .font150[Thank You!] <br>.font90[http://bit.ly/inner_source]
 
 ---
 
