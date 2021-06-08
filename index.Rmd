@@ -131,64 +131,6 @@ Ascend Innovations  &ensp; &#8729; &#8729; &#8729; &#8729; &#62; Data Scientist
 
 ]
 
----
-
-# About me  <img src="figures/about_me_bitmoji.png" height="60" width="60", align="right">
-
-<br>
-
-.pull-left[
-
-```{r, echo=FALSE}
-knitr::include_graphics("figures/name-tag.png")
-```
-
-]
-
-
-.pull-right.scrollable90[
-
-* Intro to `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/uc-r/Intro-R)
-* Intro to `r fontawesome::fa("python")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/uc-python/intro-python-datasci)
-* Intermediate `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/uc-r/Intermediate-R)
-* Intermediate `r fontawesome::fa("python")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/uc-python/intermediate-python-datasci)
-* Data Wrangling with `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](http://uc-r.github.io/data_wrangling)
-* Machine Learning with `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/uc-r/Advanced-R)
-* Advanced `r fontawesome::fa("python")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/uc-python/advanced-python-datasci)
-* Deep Learning with Keras and TensorFlow `r fontawesome::fa("python")` `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/rstudio-conf-2020/dl-keras-tf)
-* Delivering Data Science Products via Packages `r fontawesome::fa("python")` `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/misk-data-science/misk-packages)
-* Text Mining with `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/bradleyboehmke/R-Training-Text-Mining)
-* Interpretable Machine Learning `r fontawesome::fa("r-project")` [`r fontawesome::fa("link", height = 15, fill = 'lightgrey')`](https://github.com/bradleyboehmke/CinDay-RUG-IML-2018)
-
-
-]
-
----
-
-# About me  <img src="figures/about_me_bitmoji.png" height="60" width="60", align="right">
-
-<br>
-
-.pull-left[
-
-```{r, echo=FALSE}
-knitr::include_graphics("figures/name-tag.png")
-```
-
-]
-
-.pull-right[
-
-```{r, echo=FALSE, out.width="49%", out.height="20%", fig.show='hold'}
-knitr::include_graphics(c("https://images-na.ssl-images-amazon.com/images/I/41ttvv4UJ%2BL._SX331_BO1,204,203,200_.jpghttps://images.tandf.co.uk/common/jackets/amazon/978113849/9781138495685.jpg", "https://images.tandf.co.uk/common/jackets/amazon/978113849/9781138495685.jpg"))
-```
-
-```{r, eval=FALSE, echo=FALSE, out.height=350}
-knitr::include_graphics("https://images.tandf.co.uk/common/jackets/amazon/978113849/9781138495685.jpg")
-```
-
-]
-
 
 ---
 
@@ -240,12 +182,6 @@ knitr::include_graphics("figures/8451_logo.jpeg")
 knitr::include_graphics("figures/kroger-logo.png")
 ```
 ]
-
----
-background-image: url(figures/what-does-8451-do.png)
-background-position: center
-background-size: contain
-class: no-header-slide
 
 ---
 
@@ -311,20 +247,6 @@ class: section-slide, middle
 class: no-header-slide, center, middle
 
 .font250[Taking a page from the <br>open-source world]
-
----
-# Well, first, what is open source?
-
-<br>
-Yes, open source means free access to use code.
-
-<br><br>
-
---
-
-But more importantly, the open source model is...
-
-> _"a decentralized software development model that encourages open collaboration, meaning any system of innovation or production that relies on goal-oriented yet loosely coordinated participants who interact to create a product (or service) of economic value."_  - `r Citet(myBib, author = "Levine")`
 
 ---
 class: no-header-slide, center, middle
@@ -771,7 +693,9 @@ knitr::include_graphics("https://pnwe.org/wp-content/uploads/2020/05/21/Certific
 
 # Increase focus on .red[developer capabilities]
 
-.pull-left[
+.pull-left.font120[
+
+<br>
 
 * Tool development upskilling
 
@@ -821,17 +745,17 @@ class: section-slide
 
 Inner source can provide your organization many benefits:
 
-* Open collaboration --> Faster innovation
+* Faster innovation
 
-* Code reduction --> Less tech debt
+* Less tech debt
 
-* Code consistency --> Better governance
+* Better governance
 
-* Simple & common interfaces --> Faster delivery
+* Faster delivery
 
-* Baked in best practices --> Resource efficiency
+* Resource efficiency
 
-* Modular --> Establish 'lego' building blocks
+* 'Lego' building blocks
 
 ]
 
