@@ -32,130 +32,10 @@ class: title-slide
 <br><br><br><br><br><br><br>
 .font200[An Inner Source Ecosystem]
 
-.font140[Scaling productivity]
+.font140[Scaling productivity at 84.51°]
 
 <br>
 .font110[Bradley Boehmke<br>June 8, 2021<br>[bit.ly/inner_source](http://bit.ly/inner_source)]
-
-
-
----
-class: section-slide 
-
-<br><br><br><br><br><br><br><br><br><br><br>
-# .font150[Who am I]
-
----
-
-# About me  <img src="figures/about_me_bitmoji.png" height="60" width="60", align="right">
-
-<br>
-
-.pull-left[
-
-```{r, echo=FALSE}
-knitr::include_graphics("figures/name-tag.png")
-```
-
-]
-
-.pull-right[
-
-```{r, echo=FALSE, out.width="80%", out.height="80%"}
-knitr::include_graphics("figures/fam.png")
-```
-
-]
-
----
-
-# About me  <img src="figures/about_me_bitmoji.png" height="60" width="60", align="right">
-
-<br>
-
-.pull-left[
-
-```{r, echo=FALSE}
-knitr::include_graphics("figures/name-tag.png")
-```
-
-]
-
-.pull-right[
-
-```{r map-home, echo=FALSE}
-library(leaflet)
-
-home <- tibble::tibble(
-   Longitude = c(-84.015850),
-   Latitude = c(39.692720)
-   )
-
-leaflet() %>% 
-  addTiles() %>%
-  setView(lat = 39.692720, lng = -84.015850, zoom=5) %>%
-  addMarkers(lng=-84.015850, lat=39.692720)
-```
-
-]
-
----
-
-# About me  <img src="figures/about_me_bitmoji.png" height="60" width="60", align="right">
-
-<br>
-
-.pull-left[
-
-```{r, echo=FALSE}
-knitr::include_graphics("figures/name-tag.png")
-```
-
-]
-
-.pull-right[
-
-Air Force &ensp; &ensp; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#62; Finance Officer
-
-Booz Allen Hamilton &ensp; &#8729; &#8729; &#8729; &#62; Cost Analyst
-
-Air Force A9 &ensp; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#62; OR Analyst
-
-AFIT &ensp; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#62; Professor
-
-University of Cincinnati &ensp; &#8729; &#62; Adjunct
-
-Ascend Innovations  &ensp; &#8729; &#8729; &#8729; &#8729; &#62; Data Scientist
-
-84.51° &ensp; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#8729; &#62; Director, Data Science
-
-]
-
-
----
-
-# About me  <img src="figures/about_me_bitmoji.png" height="60" width="60", align="right">
-
-<br>
-
-.pull-left[
-
-```{r echo=FALSE}
-knitr::include_graphics("figures/name-tag.png")
-```
-
-]
-
-
-.font120.pull-right[
-<br><br>
-[`r fontawesome::fa("globe", fill = "steelblue")`](http://bradleyboehmke.github.io/) bradleyboehmke.github.io  <br>
-[`r fontawesome::fa("github", fill = "steelblue")`](https://github.com/bradleyboehmke/) @bradleyboehmke  <br>
-[`r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/bradleyboehmke) @bradleyboehmke  <br>
-[`r anicon::aia("google-scholar", color = "steelblue", animate = FALSE)`](http://bit.ly/bradleyboehmke_scholar) bit.ly/bradleyboehmke_scholar <br>
-[`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:bradleyboehmke@gmail.com) bradleyboehmke@gmail.com  
-
-]
 
 ---
 class: section-slide 
@@ -478,23 +358,13 @@ knitr::include_graphics("figures/effo-SO.png")
 
    - Open roadmap
    
---
-   
    - Pushing Q&A to Github & SO for persistance
-   
---
    
    - Release notes
 
---
-
    - User docs
 
---
-
    - Newsletter
-
---
 
    - Office hours
 
@@ -788,6 +658,31 @@ class: section-slide
 
 <br><br><br><br><br><br><br><br><br><br><br>
 # .font150[Thank You!] <br>.font90[http://bit.ly/inner_source]
+
+---
+
+# Keep in touch!  <img src="figures/about_me_bitmoji.png" height="60" width="60", align="right">
+
+<br>
+
+.pull-left[
+
+```{r echo=FALSE}
+knitr::include_graphics("figures/name-tag.png")
+```
+
+]
+
+
+.font120.pull-right[
+<br><br>
+[`r fontawesome::fa("globe", fill = "steelblue")`](http://bradleyboehmke.github.io/) bradleyboehmke.github.io  <br>
+[`r fontawesome::fa("github", fill = "steelblue")`](https://github.com/bradleyboehmke/) @bradleyboehmke  <br>
+[`r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/bradleyboehmke) @bradleyboehmke  <br>
+[`r anicon::aia("google-scholar", color = "steelblue", animate = FALSE)`](http://bit.ly/bradleyboehmke_scholar) bit.ly/bradleyboehmke_scholar <br>
+[`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:bradleyboehmke@gmail.com) bradleyboehmke@gmail.com  
+
+]
 
 ---
 
